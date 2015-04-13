@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="http://keith-wood.name/css/jquery.countdown.css" />
+  <style type="text/css">
+    .countdown {
+        height: 50px;
+    }
+  </style>
+</head>
+<body>
+<div class="body">
+    <div class="countdown"></div>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="http://keith-wood.name/js/jquery.plugin.js"></script>
+<script type="text/javascript" src="http://keith-wood.name/js/jquery.countdown.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    var countTo = new Date('00:01:00 11/01/2015');
+    $('.countdown').countdown({
+        until: countTo,
+        format: 'dHMS'
+    });
+});
+</script>
+</body>
+</html>
